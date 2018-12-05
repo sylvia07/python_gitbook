@@ -1,0 +1,56 @@
+#while循环
+---
+###目标：
+	* 能够使用while结构完成循环语句的书写
+	* 能够使用while循环完成计算1到100的累加求和案例
+	* 能够使用break和continue语句控制循环结构的执行顺序
+	* 能够使用while循环嵌套完成九九乘法表的输出
+---
+####基本语法
+```
+while 条件：		 
+	____反复执行的代码
+```
+
+####案例
+- 100以内求和
+```
+num = 1
+sum = 0
+while num <= 100:
+    sum = sum + num
+    # 让num值每次变化增大1
+    num += 1
+print("1到100的和是：%d" % sum)
+```
+
+- 回文数
+```
+# 三位数的回文数
+i = 100
+while i <= 999:
+    a = i // 100 # 取整为百位上的数字
+    b = i % 10  # 与10取余为个位上的数字
+    if a == b: # 如果a、b值相同则i为回文数
+        print(i,end="、")
+    i += 1
+```
+
+- break\continue
+ * break：结束当前循环
+ * continue：结束本轮循环
+ * 注意：break与continue必须出现在循环体中
+
+
+- 九九乘法表
+```
+i = 1
+while i <= 9:
+    j = 1
+    while j <= i:
+        print("%d*%d=%d" % (i,j,i*j),end="\t")
+        j += 1
+    print()
+    i += 1
+```
+
