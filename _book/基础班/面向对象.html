@@ -220,6 +220,45 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.9" data-path="异常处理.html">
+            
+                <a href="异常处理.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="模块与包.html">
+            
+                <a href="模块与包.html">
+            
+                    
+                    模块与包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="文件操作.html">
+            
+                <a href="文件操作.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -275,8 +314,9 @@
 <h3 id="&#x76EE;&#x6807;&#xFF1A;">&#x76EE;&#x6807;&#xFF1A;</h3>
 <pre><code>* &#x7406;&#x89E3;&#x9762;&#x5411;&#x5BF9;&#x8C61;
 * &#x80FD;&#x5B8C;&#x6210;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;
-* &#x9B54;&#x672F;&#x65B9;&#x6CD5;&#xFF1A;__init__&#x3001;__str__&#x65B9;&#x6CD5;&#x7684;&#x4F5C;&#x7528;
+* &#x9B54;&#x672F;&#x65B9;&#x6CD5;&#xFF1A;__init__&#x3001;__str__&#x3001;__new__&#x3001;__del__&#x65B9;&#x6CD5;&#x7684;&#x4F5C;&#x7528;
 * &#x80FD;&#x5B8C;&#x6210;&#x7C7B;&#x5C5E;&#x6027;&#x3001;&#x7C7B;&#x65B9;&#x6CD5;&#x3001;&#x6210;&#x5458;&#x5C5E;&#x6027;&#x3001;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x3001;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;
+* &#x5355;&#x4F8B;&#x6A21;&#x5F0F;
 </code></pre><hr>
 <h4 id="&#x57FA;&#x672C;&#x8BED;&#x6CD5;">&#x57FA;&#x672C;&#x8BED;&#x6CD5;</h4>
 <pre><code># &#x5B9A;&#x4E49;&#x7C7B;
@@ -314,8 +354,40 @@ class &#x7C7B;&#x540D;(&#x7236;&#x7C7B;&#x540D;)&#xFF1A;
 <li><code>__init__</code>&#xFF1A;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#x4E3A;&#x5BF9;&#x8C61;&#x521D;&#x59CB;&#x5316;&#x6210;&#x5458;&#x53D8;&#x91CF;</li>
 <li><code>__str__</code>&#xFF1A;&#x4F7F;&#x7528;print&#x51FD;&#x6570;&#x6253;&#x5370;&#x8F93;&#x51FA;&#x5BF9;&#x8C61;&#x5230;&#x5C4F;&#x5E55;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x7684;&#x89C4;&#x8303;&#x5316;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x73B0;&#x5F62;&#x5F0F;</li>
 <li><code>&#x7C7B;&#x540D;.__mro__</code>:&#x67E5;&#x770B;&#x7EE7;&#x627F;&#x5173;&#x7CFB;</li>
+<li><code>__new__</code>:&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#x6267;&#x884C;&#x7684;&#x64CD;&#x4F5C;,&#x5728;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#x81EA;&#x52A8;&#x8FD0;&#x884C;,&#x7C7B;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;</li>
+<li><code>__del__</code>:&#x5220;&#x9664;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x65AD;&#x5F00;&#x4E0E;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x7684;&#x5F15;&#x7528;&#x5173;&#x7CFB;&#x65F6;&#x81EA;&#x52A8;&#x6267;&#x884C;</li>
 </ul>
-<h4 id="&#x76F8;&#x5173;&#x6982;&#x5FF5;">&#x76F8;&#x5173;&#x6982;&#x5FF5;</h4>
+<h4 id="&#x5BF9;&#x8C61;&#x5224;&#x7B49;">&#x5BF9;&#x8C61;&#x5224;&#x7B49;</h4>
+<ul>
+<li>&#x5F53;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x5BF9;&#x5E94;&#x7684;&#x5F15;&#x7528;&#x5730;&#x5740;&#x76F8;&#x540C;&#x65F6;&#xFF0C;&#x79F0;&#x8FD9;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</li>
+<li>is:&#x5224;&#x7B49;&#x64CD;&#x4F5C;&#x7684;&#x7ED3;&#x679C;&#x662F;True&#x6216;False</li>
+<li><p>==&#x4E0E;is&#x533A;&#x522B;&#xFF1A;</p>
+<pre><code>      &quot;==&quot;:&#x5BF9;&#x5185;&#x5BB9;&#x3001;&#x6570;&#x503C;&#x8FDB;&#x884C;&#x5224;&#x5B9A;
+      &quot;is&quot;:&#x53EA;&#x9488;&#x5BF9;&#x5730;&#x5740;&#x8FDB;&#x884C;&#x5224;&#x5B9A;,&#x5730;&#x5740;&#x76F8;&#x540C;&#x5373;&#x8FD4;&#x56DE;True&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;False
+</code></pre><h4 id="&#x5355;&#x4F8B;&#x6A21;&#x5F0F;">&#x5355;&#x4F8B;&#x6A21;&#x5F0F;</h4>
+</li>
+<li>&#x63A7;&#x5236;&#x4E00;&#x4E2A;&#x7C7B;&#x53EA;&#x80FD;&#x521B;&#x5EFA;&#x51FA;&#x5355;&#x4E2A;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;</li>
+<li>&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x53D8;&#x91CF;&#x8981;&#x8FDB;&#x884C;&#x79C1;&#x6709;&#x5316;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x5728;&#x7C7B;&#x7684;&#x5916;&#x90E8;&#x8BBF;&#x95EE;&#x5230;</li>
+<li>&#x5BF9;&#x8C61;&#x7684;&#x5224;&#x7A7A;&#x64CD;&#x4F5C;&#x4F7F;&#x7528;is&#x8FDB;&#x884C;&#x5224;&#x5B9A;</li>
+</ul>
+<pre><code>class MusicPlayer(object):
+    # &#x8BB0;&#x5F55;&#x7B2C;&#x4E00;&#x4E2A;&#x88AB;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;
+    instance = None
+    # &#x8BB0;&#x5F55;&#x662F;&#x5426;&#x6267;&#x884C;&#x8FC7;&#x521D;&#x59CB;&#x5316;&#x52A8;&#x4F5C;
+    init_flag = False
+    def __new__(cls, *args, **kwargs):
+        # 1. &#x5224;&#x65AD;&#x7C7B;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x662F;&#x7A7A;&#x5BF9;&#x8C61;
+        if cls.instance is None:
+            # 2. &#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5206;&#x914D;&#x7A7A;&#x95F4;
+            cls.instance = super().__new__(cls)
+        # 3. &#x8FD4;&#x56DE;&#x7C7B;&#x5C5E;&#x6027;&#x4FDD;&#x5B58;&#x7684;&#x5BF9;&#x8C61;&#x5F15;&#x7528;
+        return cls.instance
+    def __init__(self):
+        if not MusicPlayer.init_flag:
+            print(&quot;&#x521D;&#x59CB;&#x5316;&#x97F3;&#x4E50;&#x64AD;&#x653E;&#x5668;&quot;)
+            MusicPlayer.init_flag = True
+        self.void = True
+</code></pre><h4 id="&#x76F8;&#x5173;&#x6982;&#x5FF5;">&#x76F8;&#x5173;&#x6982;&#x5FF5;</h4>
 <ul>
 <li>&#x7C7B;&#xFF1A;&#x4E00;&#x7CFB;&#x5217;&#x4E8B;&#x7269;&#x7684;&#x7EDF;&#x79F0;&#xFF0C;&#x540C;&#x7C7B;&#x4E8B;&#x7269;&#x5FC5;&#x5B9A;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x65E5;&#x5E38;&#x4E8B;&#x7269;&#x7684;&#x7279;&#x5F81;&#x6839;&#x636E;&#x7279;&#x6027;&#x5206;&#x4E3A;&#x72B6;&#x6001;&#x548C;&#x884C;&#x4E3A;&#xFF0C;&#x5BF9;&#x5E94;&#x5230;&#x7C7B;&#x4E2D;&#x662F;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#x3002;</li>
 <li>&#x7C7B;&#x6210;&#x5458;&#xFF1A;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x3001;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x7684;&#x7EDF;&#x79F0;</li>
@@ -351,13 +423,14 @@ class &#x7C7B;&#x540D;(&#x7236;&#x7C7B;&#x540D;)&#xFF1A;
  - &#x65E2;&#x8BBF;&#x95EE;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x4E5F;&#x8BBF;&#x95EE;&#x7C7B;&#x53D8;&#x91CF;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5B9A;&#x4E49;&#x6210;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;<br>
  - &#x65E2;&#x4E0D;&#x8BBF;&#x95EE;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x4E5F;&#x4E0D;&#x8BBF;&#x95EE;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;&#x5B9A;&#x4E49;&#x6210;&#x9759;&#x6001;&#x65B9;&#x6CD5;</font>
 
-
 <ul>
 <li>&#x5E38;&#x89C1;&#x95EE;&#x9898;&#xFF1A;<ul>
 <li>&#x7C7B;&#x65B9;&#x6CD5;&#x3001;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x6DF7;&#x6DC6;&#xFF1A;
   &#x4F5C;&#x4E1A;&#x9898;&#xFF1A;&#x6C42;&#x6700;&#x9AD8;&#x5206;&#xFF08;&#x90E8;&#x5206;&#x5B66;&#x751F;&#x611F;&#x89C9;&#x7528;&#x4E0D;&#x4E0A;&#x7C7B;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;&#x5C5E;&#x6027;&#xFF09;</li>
 <li>&#x5C01;&#x88C5;&#xFF1A;
   &#x4F5C;&#x4E1A;&#x9898;&#xFF1A;&#x8F93;&#x5165;&#x7528;&#x6237;&#x5E74;&#x5E74;&#x9F84;&#x4E0D;&#x6B63;&#x786E;&#x65F6;&#x62A5;&#x9519;</li>
+<li><strong>new</strong>&#x4E0E;<strong>init</strong>&#x533A;&#x522B;&#xFF1A;
+  &#x4EE5;&#x5EFA;&#x623F;&#x5B50;&#x505A;&#x6BD4;&#x55BB;&#xFF0C;<strong>new</strong>()&#x65B9;&#x6CD5;&#x8D1F;&#x8D23;&#x5F00;&#x53D1;&#x5730;&#x76AE;&#xFF0C;&#x6253;&#x4E0B;&#x5730;&#x57FA;&#xFF0C;&#x5E76;&#x5C06;&#x539F;&#x6599;&#x5B58;&#x653E;&#x5728;&#x5DE5;&#x5730;&#x3002;&#x800C;<strong>init</strong>()&#x65B9;&#x6CD5;&#x8D1F;&#x8D23;&#x4ECE;&#x5DE5;&#x5730;&#x53D6;&#x6750;&#x6599;&#x5EFA;&#x9020;&#x51FA;&#x5730;&#x76AE;&#x5F00;&#x53D1;&#x62DB;&#x6807;&#x4E66;&#x4E2D;&#x89C4;&#x5B9A;&#x7684;&#x5927;&#x697C;&#xFF0C;<strong>init</strong>()&#x8D1F;&#x8D23;&#x5927;&#x697C;&#x7684;&#x7EC6;&#x8282;&#x8BBE;&#x8BA1;&#xFF0C;&#x5EFA;&#x9020;&#xFF0C;&#x88C5;&#x4FEE;&#x4F7F;&#x5176;&#x53EF;&#x4EA4;&#x4ED8;&#x7ED9;&#x5BA2;&#x6237;</li>
 </ul>
 </li>
 </ul>
@@ -404,7 +477,7 @@ class &#x7C7B;&#x540D;(&#x7236;&#x7C7B;&#x540D;)&#xFF1A;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"面向对象","level":"1.2.5","depth":2,"next":{"title":"可变类型","level":"1.2.6","depth":2,"path":"基础班/可变类型.md","ref":"基础班/可变类型.md","articles":[]},"previous":{"title":"函数","level":"1.2.4","depth":2,"path":"基础班/函数.md","ref":"基础班/函数.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础班/面向对象.md","mtime":"2018-12-10T05:59:46.847Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-12T10:43:35.183Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"面向对象","level":"1.2.5","depth":2,"next":{"title":"可变类型","level":"1.2.6","depth":2,"path":"基础班/可变类型.md","ref":"基础班/可变类型.md","articles":[]},"previous":{"title":"函数","level":"1.2.4","depth":2,"path":"基础班/函数.md","ref":"基础班/函数.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础班/面向对象.md","mtime":"2018-12-12T12:34:44.756Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-15T09:55:15.862Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

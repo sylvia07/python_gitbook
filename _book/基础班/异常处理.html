@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>条件分支 · GitBook</title>
+        <title>异常处理 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="while循环.html" />
+    <link rel="next" href="模块与包.html" />
     
     
-    <link rel="prev" href="python介绍.html" />
+    <link rel="prev" href="引用.html" />
     
 
     </head>
@@ -129,7 +129,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="条件分支.html">
+        <li class="chapter " data-level="1.2.2" data-path="条件分支.html">
             
                 <a href="条件分支.html">
             
@@ -220,7 +220,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.9" data-path="异常处理.html">
+        <li class="chapter active" data-level="1.2.9" data-path="异常处理.html">
             
                 <a href="异常处理.html">
             
@@ -294,7 +294,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >条件分支</a>
+        <a href=".." >异常处理</a>
     </h1>
 </div>
 
@@ -309,23 +309,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="if&#x6761;&#x4EF6;&#x5206;&#x652F;">if&#x6761;&#x4EF6;&#x5206;&#x652F;</h1>
+                                <h1 id="&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x5F02;&#x5E38;&#x5904;&#x7406;</h1>
 <hr>
 <h3 id="&#x76EE;&#x6807;&#xFF1A;">&#x76EE;&#x6807;&#xFF1A;</h3>
-<ul>
-<li>&#x80FD;&#x591F;&#x4F7F;&#x7528;if...elif...else...&#x7ED3;&#x6784;&#x5B8C;&#x6210;&#x591A;&#x60C5;&#x51B5;&#x5206;&#x652F;&#x8BED;&#x53E5;&#x7684;&#x4E66;&#x5199;</li>
-<li>&#x7406;&#x89E3;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;</li>
-</ul>
-<hr>
+<pre><code>* &#x5F02;&#x5E38;&#x5904;&#x7406;&#x5E38;&#x7528;&#x683C;&#x5F0F;
+* &#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;
+</code></pre><hr>
 <h4 id="&#x57FA;&#x672C;&#x8BED;&#x6CD5;">&#x57FA;&#x672C;&#x8BED;&#x6CD5;</h4>
-<pre><code>if &#x6761;&#x4EF6;1:
-    &#x6761;&#x4EF6;1&#x6210;&#x7ACB;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;
-elif &#x6761;&#x4EF6;2:
-    &#x6761;&#x4EF6;2&#x6210;&#x7ACB;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;
-elif &#x6761;&#x4EF6;3:
-    &#x6761;&#x4EF6;3&#x6210;&#x7ACB;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;
-[else:
-    &#x6761;&#x4EF6;&#x90FD;&#x4E0D;&#x6210;&#x7ACB;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;]
+<pre><code># &#x5E38;&#x7528;&#x683C;&#x5F0F;
+try:
+    print(a)
+except:
+    print(&quot;&#x53D8;&#x91CF;a&#x672A;&#x5B9A;&#x4E49;&quot;)
+
+# &#x5B8C;&#x6574;&#x683C;&#x5F0F;
+try&#xFF1A;             
+____&#x53EF;&#x80FD;&#x5F15;&#x53D1;&#x5F02;&#x5E38;&#x73B0;&#x8C61;&#x7684;&#x4EE3;&#x7801;          
+except&#xFF1A;
+____&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x73B0;&#x8C61;&#x7684;&#x5904;&#x7406;&#x4EE3;&#x7801;
+else&#xFF1A;
+____&#x672A;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x73B0;&#x8C61;&#x7684;&#x5904;&#x7406;&#x4EE3;&#x7801;
+finally&#xFF1A;
+____try&#x4EE3;&#x7801;&#x5757;&#x7ED3;&#x675F;&#x540E;&#x8FD0;&#x884C;&#x7684;&#x4EE3;&#x7801;
+
+# &#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7C7B;
+class &#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x7C7B;&#x540D;(Exception):             
+    pass
+# &#x81EA;&#x5B9A;&#x4E49;&#x5F02;&#x5E38;&#x4E3B;&#x52A8;&#x89E6;&#x53D1;
+raise &#x5F02;&#x5E38;&#x7C7B;&#x5BF9;&#x8C61;
 </code></pre>
                                 
                                 </section>
@@ -353,12 +364,12 @@ elif &#x6761;&#x4EF6;3:
 
             
                 
-                <a href="python介绍.html" class="navigation navigation-prev " aria-label="Previous page: python介绍">
+                <a href="引用.html" class="navigation navigation-prev " aria-label="Previous page: 引用">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="while循环.html" class="navigation navigation-next " aria-label="Next page: 循环">
+                <a href="模块与包.html" class="navigation navigation-next " aria-label="Next page: 模块与包">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -369,7 +380,7 @@ elif &#x6761;&#x4EF6;3:
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"条件分支","level":"1.2.2","depth":2,"next":{"title":"循环","level":"1.2.3","depth":2,"path":"基础班/while循环.md","ref":"基础班/while循环.md","articles":[]},"previous":{"title":"python介绍","level":"1.2.1","depth":2,"path":"基础班/python介绍.md","ref":"基础班/python介绍.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础班/条件分支.md","mtime":"2018-12-10T05:59:46.847Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-15T09:55:15.862Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"异常处理","level":"1.2.9","depth":2,"next":{"title":"模块与包","level":"1.2.10","depth":2,"path":"基础班/模块与包.md","ref":"基础班/模块与包.md","articles":[]},"previous":{"title":"引用","level":"1.2.8","depth":2,"path":"基础班/引用.md","ref":"基础班/引用.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础班/异常处理.md","mtime":"2018-12-15T09:58:53.212Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-15T09:55:15.862Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
