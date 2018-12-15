@@ -9,9 +9,8 @@
 
 ---
 #####Python语言：**面向对象**的**解释型**计算机程序设计语言。
-#####创始人：吉多·范
-罗苏姆（Guido van Rossum）
-<!-- #####python优缺点：
+#####创始人：吉多·范罗苏姆（Guido van Rossum）
+#####python优缺点：
 - 优点：简单、易学、免费、开源、高层语言、可移植性、解释性、面向对象、可扩展性、丰富的库、规范的代码<br/>
 - 缺点：运行速度慢、国内市场较小、中文资料匮乏、构架选择太多
 ####Hello python常见问题
@@ -20,7 +19,8 @@
 - 语法错误: SyntaxError:invalid syntax<br/>
 ####Pycharm调试按钮说明：
 - 【Step Over】键进行程序单步执行，快键键【F8】
-- 【Resumn program】键放行程序向下执行，快捷键【F9】 -->
+- 【Resumn program】键放行程序向下执行，快捷键【F9】
+
 ---
 <font color="red" size=12 face="黑体">*考点</font>
 ####注释：
