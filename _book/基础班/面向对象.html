@@ -220,7 +220,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.9" data-path="异常处理.html">
+        <li class="chapter " data-level="1.2.9" data-path="文件操作.html">
+            
+                <a href="文件操作.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="异常处理.html">
             
                 <a href="异常处理.html">
             
@@ -233,25 +246,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.10" data-path="模块与包.html">
+        <li class="chapter " data-level="1.2.11" data-path="模块与包.html">
             
                 <a href="模块与包.html">
             
                     
                     模块与包
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.11" data-path="文件操作.html">
-            
-                <a href="文件操作.html">
-            
-                    
-                    文件操作
             
                 </a>
             
@@ -314,7 +314,7 @@
 <h3 id="&#x76EE;&#x6807;&#xFF1A;">&#x76EE;&#x6807;&#xFF1A;</h3>
 <pre><code>* &#x7406;&#x89E3;&#x9762;&#x5411;&#x5BF9;&#x8C61;
 * &#x80FD;&#x5B8C;&#x6210;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;
-* &#x9B54;&#x672F;&#x65B9;&#x6CD5;&#xFF1A;__init__&#x3001;__str__&#x3001;__new__&#x3001;__del__&#x65B9;&#x6CD5;&#x7684;&#x4F5C;&#x7528;
+* &#x9B54;&#x672F;&#x65B9;&#x6CD5;&#xFF1A;```__init__&#x3001;__str__&#x3001;__new__&#x3001;__del__```&#x65B9;&#x6CD5;&#x7684;&#x4F5C;&#x7528;
 * &#x80FD;&#x5B8C;&#x6210;&#x7C7B;&#x5C5E;&#x6027;&#x3001;&#x7C7B;&#x65B9;&#x6CD5;&#x3001;&#x6210;&#x5458;&#x5C5E;&#x6027;&#x3001;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x3001;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;
 * &#x5355;&#x4F8B;&#x6A21;&#x5F0F;
 </code></pre><hr>
@@ -429,7 +429,7 @@ class &#x7C7B;&#x540D;(&#x7236;&#x7C7B;&#x540D;)&#xFF1A;
   &#x4F5C;&#x4E1A;&#x9898;&#xFF1A;&#x6C42;&#x6700;&#x9AD8;&#x5206;&#xFF08;&#x90E8;&#x5206;&#x5B66;&#x751F;&#x611F;&#x89C9;&#x7528;&#x4E0D;&#x4E0A;&#x7C7B;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;&#x5C5E;&#x6027;&#xFF09;</li>
 <li>&#x5C01;&#x88C5;&#xFF1A;
   &#x4F5C;&#x4E1A;&#x9898;&#xFF1A;&#x8F93;&#x5165;&#x7528;&#x6237;&#x5E74;&#x5E74;&#x9F84;&#x4E0D;&#x6B63;&#x786E;&#x65F6;&#x62A5;&#x9519;</li>
-<li><strong>new</strong>&#x4E0E;<strong>init</strong>&#x533A;&#x522B;&#xFF1A;
+<li><code>__new__</code>&#x4E0E;<strong>init</strong>&#x533A;&#x522B;&#xFF1A;
   &#x4EE5;&#x5EFA;&#x623F;&#x5B50;&#x505A;&#x6BD4;&#x55BB;&#xFF0C;<strong>new</strong>()&#x65B9;&#x6CD5;&#x8D1F;&#x8D23;&#x5F00;&#x53D1;&#x5730;&#x76AE;&#xFF0C;&#x6253;&#x4E0B;&#x5730;&#x57FA;&#xFF0C;&#x5E76;&#x5C06;&#x539F;&#x6599;&#x5B58;&#x653E;&#x5728;&#x5DE5;&#x5730;&#x3002;&#x800C;<strong>init</strong>()&#x65B9;&#x6CD5;&#x8D1F;&#x8D23;&#x4ECE;&#x5DE5;&#x5730;&#x53D6;&#x6750;&#x6599;&#x5EFA;&#x9020;&#x51FA;&#x5730;&#x76AE;&#x5F00;&#x53D1;&#x62DB;&#x6807;&#x4E66;&#x4E2D;&#x89C4;&#x5B9A;&#x7684;&#x5927;&#x697C;&#xFF0C;<strong>init</strong>()&#x8D1F;&#x8D23;&#x5927;&#x697C;&#x7684;&#x7EC6;&#x8282;&#x8BBE;&#x8BA1;&#xFF0C;&#x5EFA;&#x9020;&#xFF0C;&#x88C5;&#x4FEE;&#x4F7F;&#x5176;&#x53EF;&#x4EA4;&#x4ED8;&#x7ED9;&#x5BA2;&#x6237;</li>
 </ul>
 </li>
@@ -477,7 +477,7 @@ class &#x7C7B;&#x540D;(&#x7236;&#x7C7B;&#x540D;)&#xFF1A;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"面向对象","level":"1.2.5","depth":2,"next":{"title":"可变类型","level":"1.2.6","depth":2,"path":"基础班/可变类型.md","ref":"基础班/可变类型.md","articles":[]},"previous":{"title":"函数","level":"1.2.4","depth":2,"path":"基础班/函数.md","ref":"基础班/函数.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础班/面向对象.md","mtime":"2018-12-12T12:34:44.756Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-15T09:55:15.862Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"面向对象","level":"1.2.5","depth":2,"next":{"title":"可变类型","level":"1.2.6","depth":2,"path":"基础班/可变类型.md","ref":"基础班/可变类型.md","articles":[]},"previous":{"title":"函数","level":"1.2.4","depth":2,"path":"基础班/函数.md","ref":"基础班/函数.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础班/面向对象.md","mtime":"2018-12-16T06:44:21.501Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-12-15T13:24:41.065Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
