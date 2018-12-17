@@ -68,9 +68,13 @@ FirstName		UserName		CardId -->
 - 变量类型：`int float bool str`
 - type():获取对应数据类型
 
-- 常见考核类型：
-	* 选择题：标识符命名规范、type函数、python中的注释
-	
+<hr/>
+<br>
+<font color="FF0000"><strong>- 常见考核类型:
+<ul>
+	<li>选择题：标识符命名规范、type函数、python中的注释</li>
+</ul></strong>
+</font>	
 
 
 
